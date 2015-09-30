@@ -28,6 +28,11 @@ def home():
 def about():
     """Render the website's about page."""
     return render_template('about.html')
+    
+@app.route('/main/')
+def main_page():
+    """Render the website's main page."""
+    return render_template('main.html')
 
 
 ###
